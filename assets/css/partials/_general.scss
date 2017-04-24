@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-stack;
+    font-size: $font-size-default;
+    font-weight: $font-weight-original;
+    color: $asbestos-dark;
+    text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1140px;
+    margin: 0 auto; // height: 200px;
+}
+
+.col {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    box-shadow: $silver 0px 0px 8px 0px;
+    background-color: $light-box;
+}
+
+.col-yellow {
+    border-top: 5px solid $light-yellow;
+}
+
+.col-purple {
+    border-top: 5px solid $light-purple;
+}
+
+.col-cyan {
+    border-top: 5px solid $light-cyan;
+}
+
+.col-alizarin {
+    border-top: 5px solid $alizarin;
+}
+
+.col-yellow,
+.col-purple,
+.col-cyan,
+.col-alizarin {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.icon {
+    flex: 1;
+    i {
+        display: inline-block;
+        width: 100%
+    }
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+.header-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.city-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: $light-box; // background: $transperant-color;
+}
+
+.city-input:focus {
+    border-color: #ecf0f1;
+    border: 1px solid $silver;
+    outline: none;
+}
+
+.icon {
+    font-size: 600%;
+}
+
+.icon-morning {
+    color: $light-yellow;
+}
+
+.icon-day {
+    color: $light-purple;
+}
+
+.icon-evening {
+    color: $light-cyan;
+}
+
+.icon-night {
+    color: $alizarin;
+}
+
+.location {
+    // width: 50px;
+    // height: 50px;
+    // background-color: red;
+    color: $pure-white;
+    font-size: 120%;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

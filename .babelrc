@@ -1,0 +1,10 @@
+{
+    "presets": [
+        [
+            "es2015", {
+                //for tree-shaking
+                "modules": false
+            }
+        ]
+    ]
+}

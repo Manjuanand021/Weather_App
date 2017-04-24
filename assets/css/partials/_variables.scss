@@ -1,0 +1,30 @@
+//Font stack
+$font-stack: 'Lato',
+'Arial',
+'sans-serif';
+$font-weight-original:400;
+$font-size-default:20px;
+//Color stack
+$light-yellow:#F4C54F;
+$light-purple:#99A1E8;
+$asbestos-dark:#7f8c8d;
+$silver:#bdc3c7;
+$pure-white: #fff;
+$dark-grey:#5f5b5b;
+$transperant-color:transparent;
+$light-cyan:#66D0E6;
+$alizarin: #e74c3c;
+$light-box:#f6f7f6;
+//Miscellaneous
+$max-vieport-width:1140px;
+$line-height-default:150%;
+$theme-img: url('../images/header.jpg');
+//Media queries
+$xs:'only screen and (max-width: 575px)';
+// Small devices (landscape phones, 576px and up)
+$sm:'only screen and (min-width: 576px) and (max-width: 767px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+// Large devices (desktops, 992px and up)
+$lg:'only screen and (min-width: 992px) and (max-width: 1199px)';
+// Extra large devices (large desktops, 1200px and up)
+$xl:'(min-width: 1200px)';
