@@ -48,11 +48,16 @@ html {
 .col-alizarin {
     border-top: 5px solid $alizarin;
 }
+.col-peter-river{
+    border-top: 5px solid $peter-river;
+    
+}
 
 .col-yellow,
 .col-purple,
 .col-cyan,
-.col-alizarin {
+.col-alizarin,
+.col-peter-river {
     display: flex;
     flex-flow: row wrap;
 }
@@ -66,7 +71,7 @@ html {
 }
 
 .content {
-    flex: 1;
+    flex: 2;
     text-align: left;
 }
 
@@ -85,7 +90,13 @@ html {
     height: 40px;
     padding: 10px;
     border-radius: 7px;
-    background-color: $light-box; // background: $transperant-color;
+    background-color: $light-box; // background: $transperant-color;    
+}
+
+.search-progress {
+    background-image: $loading-icon-url;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 .city-input:focus {
@@ -95,32 +106,35 @@ html {
 }
 
 .icon {
-    font-size: 600%;
+    font-size: 350%;
 }
 
-.icon-morning {
+.icon-yellow {
     color: $light-yellow;
 }
 
-.icon-day {
+.icon-purple {
     color: $light-purple;
 }
 
-.icon-evening {
+.icon-cyan {
     color: $light-cyan;
 }
 
-.icon-night {
+.icon-alizarin {
     color: $alizarin;
+}
+.icon-peter-river{
+    color:$peter-river;
 }
 
 .location {
-    // width: 50px;
-    // height: 50px;
-    // background-color: red;
     color: $pure-white;
-    font-size: 120%;
+    font-size: 110%;
     margin-top: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+.btn-serach{
+    color:$pure-white;
 }

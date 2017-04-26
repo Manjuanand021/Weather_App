@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Dribble Zora Template</title>
+    <title>Weather App</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../vendor/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../vendor/css/ionicons.min.css">
+    <link rel="icon" type="image/png" href="./assets/images/weather-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700" rel="stylesheet">
 </head>
 
@@ -14,23 +15,26 @@
     <div class="wrapper">
         <header>
             <div class="header-input">
-                <input type="text" name="txtCity" placeholder="Your favorite city..." class="city-input">
+                <input type="text" name="txtCity" placeholder="Your favorite city..." class="city-input search-processing">                
                 <div class="location">
                     <i class="ion-ios-location"></i>
-                    <span class="city">Mysuru, Karnataka, India.</span>
+                    <span class="city">Mysuru.</span>
                 </div>
             </div>
         </header>
         <main>
-            <div class="row">
-                <div class="col col-yellow">
+            <div class="row weather-cols">                
+                <!--<div class="col col-yellow">
                     <div class="icon icon-morning">
                         <i class="ion-ios-cloudy-outline"></i>
                     </div>
                     <div class="content">
                         <h2>Morning</h2>
-                        <h1>+ 27<sup>&deg;</sup></h1>
-                        <h6>Wind: W 12 mph</h6>
+                        <h1>
+                            <i class="ion-ios-arrow-thin-up"></i>&nbsp;27<sup>&deg;</sup>,
+                            <i class="ion-ios-arrow-thin-down"></i>&nbsp;23<sup>&deg;</sup>                            
+                        </h1>
+                        <h6>Chance of Rain</h6>
                         <h6>Humidity: 45%</h6>
                     </div>
                 </div>
@@ -39,21 +43,27 @@
                         <i class="ion-ios-partlysunny-outline"></i>
                     </div>
                     <div class="content">
-                        <h2>Day</h2>
-                        <h1>+ 32<sup>&deg;</sup></h1>
-                        <h6>Wind: W 10 mph</h6>
-                        <h6>Humidity: 40%</h6>
+                        <h2>Morning</h2>
+                        <h1>
+                            <i class="ion-ios-arrow-thin-up"></i>&nbsp;27<sup>&deg;</sup>,
+                            <i class="ion-ios-arrow-thin-down"></i>&nbsp;23<sup>&deg;</sup>                            
+                        </h1>
+                        <h6>Wind: W 12 mph</h6>
+                        <h6>Humidity: 45%</h6>
                     </div>
                 </div>
                 <div class="col col-cyan">
                     <div class="icon icon-evening">
                         <i class="ion-ios-rainy-outline"></i>
                     </div>
-                    <div class="content">
-                        <h2>Evening</h2>
-                        <h1>+ 26<sup>&deg;</sup></h1>
+                   <div class="content">
+                        <h2>Morning</h2>
+                        <h1>
+                            <i class="ion-ios-arrow-thin-up"></i>&nbsp;27<sup>&deg;</sup>,
+                            <i class="ion-ios-arrow-thin-down"></i>&nbsp;23<sup>&deg;</sup>                            
+                        </h1>
                         <h6>Wind: W 12 mph</h6>
-                        <h6>Humidity: 75%</h6>
+                        <h6>Humidity: 45%</h6>
                     </div>
                 </div>
                 <div class="col col-alizarin">
@@ -61,12 +71,29 @@
                         <i class="ion-ios-cloudy-night-outline"></i>
                     </div>
                     <div class="content">
-                        <h2>Night</h2>
-                        <h1>+ 24<sup>&deg;</sup></h1>
-                        <h6>Wind: E 15 mph</h6>
-                        <h6>Humidity: 30%</h6>
+                        <h2>Morning</h2>
+                        <h1>
+                            <i class="ion-ios-arrow-thin-up"></i>&nbsp;27<sup>&deg;</sup>,
+                            <i class="ion-ios-arrow-thin-down"></i>&nbsp;23<sup>&deg;</sup>                            
+                        </h1>
+                        <h6>Wind: W 12 mph</h6>
+                        <h6>Humidity: 45%</h6>
                     </div>
                 </div>
+                <div class="col col-alizarin">
+                    <div class="icon icon-night">
+                        <i class="ion-ios-cloudy-night-outline"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Morning</h2>
+                        <h1>
+                            <i class="ion-ios-arrow-thin-up"></i>&nbsp;27<sup>&deg;</sup>,
+                            <i class="ion-ios-arrow-thin-down"></i>&nbsp;23<sup>&deg;</sup>                            
+                        </h1>
+                        <h6>Wind: W 12 mph</h6>
+                        <h6>Humidity: 45%</h6>
+                    </div>
+                </div>-->
             </div>
         </main>
 

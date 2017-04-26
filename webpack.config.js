@@ -1,5 +1,5 @@
 var path = require('path'),
-    optimize = require('webpack').optimize,
+    // optimize = require('webpack').optimize,
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
     HTMLWebpackPlugin = require('html-webpack-plugin'),
     CleanPlugin = require('clean-webpack-plugin');
@@ -12,12 +12,13 @@ module.exports = {
     entry: './main.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].bundle.js',
-        //Tells webpack dev server where to look for resources
-        // publicPath: '/build'
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [{
+                use: 'babel-loader',
+                test: /\.js$/
+            }, {
                 test: /\.scss$/,
                 use: extractPlugin.extract({
                     use: ['css-loader', 'sass-loader', 'resolve-url-loader']
@@ -27,7 +28,7 @@ module.exports = {
                 use: ['html-loader']
             },
             {
-                test: /\.(jpg|jpeg|png|svg)$/,
+                test: /\.(jpg|jpeg|png|svg|gif)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
