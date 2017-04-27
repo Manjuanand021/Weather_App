@@ -56,7 +56,6 @@ function addWeatherHTMLContent(html) {
 function removeWeatherHTMLContent() {
     // console.log(weatherContent);
     while (weatherContent.hasChildNodes()) {
-        console.log('object');
         weatherContent.removeChild(weatherContent.lastChild);
     }
 }
