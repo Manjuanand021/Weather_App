@@ -2,8 +2,7 @@ const apiUrl = 'http://api.wunderground.com/api/ef111b046cb91cfe/forecast10day/q
 
 function getWeather(city, cb) {
     const weatherXhttp = new XMLHttpRequest();
-    weatherXhttp.onreadystatechange = function () {
-        console.log('blah');
+    weatherXhttp.onreadystatechange = function () {        
         if (this.readyState == 4 && this.status == 200) {
             cb(JSON.parse(weatherXhttp.responseText));
         }
